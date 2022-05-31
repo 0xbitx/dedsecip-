@@ -1,50 +1,195 @@
-import argparse
-import requests, json
-import sys
-from sys import argv
-import os
+# Encrypted by: Dedsec 0xbit
+# Github- https://github.com/0xbitx
 
-parser = argparse.ArgumentParser()
-
-parser.add_argument ("-t", help= "target/IP address", type=str, dest='target', required=True )
-
-args = parser.parse_args()
-
-green = '\033[92m'
-clear = '\033[0m'
-bold = '\033[01m'
-
-print (green+bold+"""
-
-8888b.  888888 8888b.  .dP"Y8 888888  dP""b8    
- 8I  Yb 88__    8I  Yb `Ybo." 88__   dP   `"         
- 8I  dY 88""    8I  dY o.`Y8b 88""   Yb             
-8888Y"  888888 8888Y"  8bodP' 888888  YboodP    
-"""+green)
-print (green+bold+"         CODED BY 0XBIT GUY \n"+clear)
-
-ip = args.target
-
-api = "http://ip-api.com/json/"
-
-try:
-        data = requests.get(api+ip).json()
-        sys.stdout.flush()
-        a = green+bold+"[*]"
-        b = green+bold+"[*]"
-        print (a, "[Victim]:", data['query'])
-        print (b, "[ISP]:", data['isp'])
-        print (a, "[Organisation]:", data['org'])
-        print (b, "[City]:", data['city'])
-        print (a, "[Region]:", data['region'])
-        print (b, "[Longitude]:", data['lon'])
-        print (a, "[Latitude]:", data['lat'])
-        print (b, "[Time zone]:", data['timezone'])
-        print (a, "[Zip code]:", data['zip'])
-       
-except KeyboardInterrupt:
-        print ('Terminating'+green)
-        sys.exit(0)
-except requests.exceptions.ConnectionError as e:
-        print (green+"[~]"+" check your internet connection!"+clear)
-sys.exit(1)
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec = ""
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x61\x57\x31\x77\x62\x33\x4a\x30\x49\x47"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x46\x79\x5a\x33\x42\x68\x63\x6e\x4e\x6c"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x43\x6d\x6c\x74\x63\x47\x39\x79\x64\x43"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x42\x79\x5a\x58\x46\x31\x5a\x58\x4e\x30"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x63\x79\x77\x67\x61\x6e\x4e\x76\x62\x67"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x70\x70\x62\x58\x42\x76\x63\x6e\x51\x67"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x63\x33\x6c\x7a\x43\x6d\x5a\x79\x62\x32"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x30\x67\x63\x33\x6c\x7a\x49\x47\x6c\x74"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x63\x47\x39\x79\x64\x43\x42\x68\x63\x6d"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x64\x32\x43\x6d\x6c\x74\x63\x47\x39\x79"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x64\x43\x42\x76\x63\x77\x6f\x4b\x63\x47"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x46\x79\x63\x32\x56\x79\x49\x44\x30\x67"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x59\x58\x4a\x6e\x63\x47\x46\x79\x63\x32"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x55\x75\x51\x58\x4a\x6e\x64\x57\x31\x6c"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x62\x6e\x52\x51\x59\x58\x4a\x7a\x5a\x58"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x49\x6f\x4b\x51\x6f\x4b\x63\x47\x46\x79"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x63\x32\x56\x79\x4c\x6d\x46\x6b\x5a\x46"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x39\x68\x63\x6d\x64\x31\x62\x57\x56\x75"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x64\x43\x41\x6f\x49\x69\x31\x30\x49\x69"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x77\x67\x61\x47\x56\x73\x63\x44\x30\x67"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x49\x6e\x52\x68\x63\x6d\x64\x6c\x64\x43"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x39\x4a\x55\x43\x42\x68\x5a\x47\x52\x79"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x5a\x58\x4e\x7a\x49\x69\x77\x67\x64\x48"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x6c\x77\x5a\x54\x31\x7a\x64\x48\x49\x73"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x49\x47\x52\x6c\x63\x33\x51\x39\x4a\x33"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x52\x68\x63\x6d\x64\x6c\x64\x43\x63\x73"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x49\x48\x4a\x6c\x63\x58\x56\x70\x63\x6d"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x56\x6b\x50\x56\x52\x79\x64\x57\x55\x67"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x4b\x51\x6f\x4b\x59\x58\x4a\x6e\x63\x79"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x41\x39\x49\x48\x42\x68\x63\x6e\x4e\x6c"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x63\x69\x35\x77\x59\x58\x4a\x7a\x5a\x56"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x39\x68\x63\x6d\x64\x7a\x4b\x43\x6b\x4b"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x43\x6d\x64\x79\x5a\x57\x56\x75\x49\x44"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x30\x67\x4a\x31\x77\x77\x4d\x7a\x4e\x62"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x4f\x54\x4a\x74\x4a\x77\x70\x6a\x62\x47"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x56\x68\x63\x69\x41\x39\x49\x43\x64\x63"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x4d\x44\x4d\x7a\x57\x7a\x42\x74\x4a\x77"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x70\x69\x62\x32\x78\x6b\x49\x44\x30\x67"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x4a\x31\x77\x77\x4d\x7a\x4e\x62\x4d\x44"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x46\x74\x4a\x77\x6f\x4b\x63\x48\x4a\x70"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x62\x6e\x51\x67\x4b\x47\x64\x79\x5a\x57"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x56\x75\x4b\x32\x4a\x76\x62\x47\x51\x72"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x49\x69\x49\x69\x43\x67\x6f\x34\x4f\x44"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x67\x34\x59\x69\x34\x67\x49\x44\x67\x34"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x4f\x44\x67\x34\x4f\x43\x41\x34\x4f\x44"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x67\x34\x59\x69\x34\x67\x49\x43\x35\x6b"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x55\x43\x4a\x5a\x4f\x43\x41\x34\x4f\x44"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x67\x34\x4f\x44\x67\x67\x49\x47\x52\x51"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x49\x69\x4a\x69\x4f\x43\x41\x67\x49\x43"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x41\x4b\x49\x44\x68\x4a\x49\x43\x42\x5a"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x59\x69\x41\x34\x4f\x46\x39\x66\x49\x43"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x41\x67\x49\x44\x68\x4a\x49\x43\x42\x5a"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x59\x69\x42\x67\x57\x57\x4a\x76\x4c\x69"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x49\x67\x4f\x44\x68\x66\x58\x79\x41\x67"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x49\x47\x52\x51\x49\x43\x41\x67\x59\x43"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x49\x67\x49\x43\x41\x67\x49\x43\x41\x67"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x49\x43\x41\x4b\x49\x44\x68\x4a\x49\x43"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x42\x6b\x57\x53\x41\x34\x4f\x43\x49\x69"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x49\x43\x41\x67\x49\x44\x68\x4a\x49\x43"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x42\x6b\x57\x53\x42\x76\x4c\x6d\x42\x5a"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x4f\x47\x49\x67\x4f\x44\x67\x69\x49\x69"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x41\x67\x49\x46\x6c\x69\x49\x43\x41\x67"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x49\x43\x41\x67\x49\x43\x41\x67\x49\x43"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x41\x67\x49\x41\x6f\x34\x4f\x44\x67\x34"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x57\x53\x49\x67\x49\x44\x67\x34\x4f\x44"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x67\x34\x4f\x43\x41\x34\x4f\x44\x67\x34"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x57\x53\x49\x67\x49\x44\x68\x69\x62\x32"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x52\x51\x4a\x79\x41\x34\x4f\x44\x67\x34"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x4f\x44\x67\x67\x49\x46\x6c\x69\x62\x32"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x39\x6b\x55\x43\x41\x67\x49\x43\x41\x4b"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x49\x69\x49\x69\x4b\x32\x64\x79\x5a\x57"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x56\x75\x4b\x51\x70\x77\x63\x6d\x6c\x75"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x64\x43\x41\x6f\x5a\x33\x4a\x6c\x5a\x57"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x34\x72\x59\x6d\x39\x73\x5a\x43\x73\x69"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x49\x43\x41\x67\x49\x43\x41\x67\x49\x43"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x41\x67\x51\x30\x39\x45\x52\x55\x51\x67"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x51\x6c\x6b\x67\x4d\x46\x68\x43\x53\x56"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x51\x67\x52\x31\x56\x5a\x49\x46\x78\x75"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x49\x69\x74\x6a\x62\x47\x56\x68\x63\x69"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x6b\x4b\x43\x6d\x6c\x77\x49\x44\x30\x67"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x59\x58\x4a\x6e\x63\x79\x35\x30\x59\x58"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x4a\x6e\x5a\x58\x51\x4b\x43\x6d\x46\x77"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x61\x53\x41\x39\x49\x43\x4a\x6f\x64\x48"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x52\x77\x4f\x69\x38\x76\x61\x58\x41\x74"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x59\x58\x42\x70\x4c\x6d\x4e\x76\x62\x53"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x39\x71\x63\x32\x39\x75\x4c\x79\x49\x4b"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x43\x6e\x52\x79\x65\x54\x6f\x4b\x49\x43"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x41\x67\x49\x43\x41\x67\x49\x43\x42\x6b"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x59\x58\x52\x68\x49\x44\x30\x67\x63\x6d"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x56\x78\x64\x57\x56\x7a\x64\x48\x4d\x75"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x5a\x32\x56\x30\x4b\x47\x46\x77\x61\x53"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x74\x70\x63\x43\x6b\x75\x61\x6e\x4e\x76"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x62\x69\x67\x70\x43\x69\x41\x67\x49\x43"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x41\x67\x49\x43\x41\x67\x63\x33\x6c\x7a"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x4c\x6e\x4e\x30\x5a\x47\x39\x31\x64\x43"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x35\x6d\x62\x48\x56\x7a\x61\x43\x67\x70"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x43\x69\x41\x67\x49\x43\x41\x67\x49\x43"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x41\x67\x59\x53\x41\x39\x49\x47\x64\x79"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x5a\x57\x56\x75\x4b\x32\x4a\x76\x62\x47"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x51\x72\x49\x6c\x73\x71\x58\x53\x49\x4b"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x49\x43\x41\x67\x49\x43\x41\x67\x49\x43"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x42\x69\x49\x44\x30\x67\x5a\x33\x4a\x6c"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x5a\x57\x34\x72\x59\x6d\x39\x73\x5a\x43"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x73\x69\x57\x79\x70\x64\x49\x67\x6f\x67"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x49\x43\x41\x67\x49\x43\x41\x67\x49\x48"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x42\x79\x61\x57\x35\x30\x49\x43\x68\x68"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x4c\x43\x41\x69\x57\x31\x5a\x70\x59\x33"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x52\x70\x62\x56\x30\x36\x49\x69\x77\x67"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x5a\x47\x46\x30\x59\x56\x73\x6e\x63\x58"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x56\x6c\x63\x6e\x6b\x6e\x58\x53\x6b\x4b"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x49\x43\x41\x67\x49\x43\x41\x67\x49\x43"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x42\x77\x63\x6d\x6c\x75\x64\x43\x41\x6f"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x59\x69\x77\x67\x49\x6c\x74\x4a\x55\x31"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x42\x64\x4f\x69\x49\x73\x49\x47\x52\x68"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x64\x47\x46\x62\x4a\x32\x6c\x7a\x63\x43"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x64\x64\x4b\x51\x6f\x67\x49\x43\x41\x67"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x49\x43\x41\x67\x49\x48\x42\x79\x61\x57"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x35\x30\x49\x43\x68\x68\x4c\x43\x41\x69"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x57\x30\x39\x79\x5a\x32\x46\x75\x61\x58"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x4e\x68\x64\x47\x6c\x76\x62\x6c\x30\x36"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x49\x69\x77\x67\x5a\x47\x46\x30\x59\x56"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x73\x6e\x62\x33\x4a\x6e\x4a\x31\x30\x70"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x43\x69\x41\x67\x49\x43\x41\x67\x49\x43"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x41\x67\x63\x48\x4a\x70\x62\x6e\x51\x67"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x4b\x47\x49\x73\x49\x43\x4a\x62\x51\x32"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x6c\x30\x65\x56\x30\x36\x49\x69\x77\x67"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x5a\x47\x46\x30\x59\x56\x73\x6e\x59\x32"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x6c\x30\x65\x53\x64\x64\x4b\x51\x6f\x67"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x49\x43\x41\x67\x49\x43\x41\x67\x49\x48"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x42\x79\x61\x57\x35\x30\x49\x43\x68\x68"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x4c\x43\x41\x69\x57\x31\x4a\x6c\x5a\x32"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x6c\x76\x62\x6c\x30\x36\x49\x69\x77\x67"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x5a\x47\x46\x30\x59\x56\x73\x6e\x63\x6d"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x56\x6e\x61\x57\x39\x75\x4a\x31\x30\x70"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x43\x69\x41\x67\x49\x43\x41\x67\x49\x43"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x41\x67\x63\x48\x4a\x70\x62\x6e\x51\x67"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x4b\x47\x49\x73\x49\x43\x4a\x62\x54\x47"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x39\x75\x5a\x32\x6c\x30\x64\x57\x52\x6c"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x58\x54\x6f\x69\x4c\x43\x42\x6b\x59\x58"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x52\x68\x57\x79\x64\x73\x62\x32\x34\x6e"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x58\x53\x6b\x4b\x49\x43\x41\x67\x49\x43"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x41\x67\x49\x43\x42\x77\x63\x6d\x6c\x75"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x64\x43\x41\x6f\x59\x53\x77\x67\x49\x6c"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x74\x4d\x59\x58\x52\x70\x64\x48\x56\x6b"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x5a\x56\x30\x36\x49\x69\x77\x67\x5a\x47"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x46\x30\x59\x56\x73\x6e\x62\x47\x46\x30"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x4a\x31\x30\x70\x43\x69\x41\x67\x49\x43"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x41\x67\x49\x43\x41\x67\x63\x48\x4a\x70"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x62\x6e\x51\x67\x4b\x47\x49\x73\x49\x43"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x4a\x62\x56\x47\x6c\x74\x5a\x53\x42\x36"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x62\x32\x35\x6c\x58\x54\x6f\x69\x4c\x43"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x42\x6b\x59\x58\x52\x68\x57\x79\x64\x30"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x61\x57\x31\x6c\x65\x6d\x39\x75\x5a\x53"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x64\x64\x4b\x51\x6f\x67\x49\x43\x41\x67"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x49\x43\x41\x67\x49\x48\x42\x79\x61\x57"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x35\x30\x49\x43\x68\x68\x4c\x43\x41\x69"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x57\x31\x70\x70\x63\x43\x42\x6a\x62\x32"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x52\x6c\x58\x54\x6f\x69\x4c\x43\x42\x6b"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x59\x58\x52\x68\x57\x79\x64\x36\x61\x58"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x41\x6e\x58\x53\x6b\x4b\x49\x43\x41\x67"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x49\x43\x41\x67\x49\x41\x70\x6c\x65\x47"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x4e\x6c\x63\x48\x51\x67\x53\x32\x56\x35"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x59\x6d\x39\x68\x63\x6d\x52\x4a\x62\x6e"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x52\x6c\x63\x6e\x4a\x31\x63\x48\x51\x36"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x43\x69\x41\x67\x49\x43\x41\x67\x49\x43"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x41\x67\x63\x48\x4a\x70\x62\x6e\x51\x67"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x4b\x43\x64\x55\x5a\x58\x4a\x74\x61\x57"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x35\x68\x64\x47\x6c\x75\x5a\x79\x63\x72"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x5a\x33\x4a\x6c\x5a\x57\x34\x70\x43\x69"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x41\x67\x49\x43\x41\x67\x49\x43\x41\x67"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x63\x33\x6c\x7a\x4c\x6d\x56\x34\x61\x58"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x51\x6f\x4d\x43\x6b\x4b\x5a\x58\x68\x6a"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x5a\x58\x42\x30\x49\x48\x4a\x6c\x63\x58"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x56\x6c\x63\x33\x52\x7a\x4c\x6d\x56\x34"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x59\x32\x56\x77\x64\x47\x6c\x76\x62\x6e"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x4d\x75\x51\x32\x39\x75\x62\x6d\x56\x6a"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x64\x47\x6c\x76\x62\x6b\x56\x79\x63\x6d"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x39\x79\x49\x47\x46\x7a\x49\x47\x55\x36"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x43\x69\x41\x67\x49\x43\x41\x67\x49\x43"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x41\x67\x63\x48\x4a\x70\x62\x6e\x51\x67"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x4b\x47\x64\x79\x5a\x57\x56\x75\x4b\x79"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x4a\x62\x66\x6c\x30\x69\x4b\x79\x49\x67"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x59\x32\x68\x6c\x59\x32\x73\x67\x65\x57"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x39\x31\x63\x69\x42\x70\x62\x6e\x52\x6c"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x63\x6d\x35\x6c\x64\x43\x42\x6a\x62\x32"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x35\x75\x5a\x57\x4e\x30\x61\x57\x39\x75"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x49\x53\x49\x72\x59\x32\x78\x6c\x59\x58"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x49\x70\x43\x6e\x4e\x35\x63\x79\x35\x6c"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x65\x47\x6c\x30\x4b\x44\x45\x70\x43\x67"
+dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec += "\x3d\x3d"
+exec(__import__("\x62\x61\x73\x65\x36\x34").b64decode(dedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsecdedsec.encode("\x75\x74\x66\x2d\x38")).decode("\x75\x74\x66\x2d\x38"))
